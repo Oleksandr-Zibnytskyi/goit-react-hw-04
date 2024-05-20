@@ -1,4 +1,19 @@
-.loaderContainer {
-    width: 100%;
-    text-align: center;
- }
+.loaderContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+  }
+  
+  .loaderContainer p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00BFFF;
+  }

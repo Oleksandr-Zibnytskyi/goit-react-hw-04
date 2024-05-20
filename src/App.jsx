@@ -24,6 +24,7 @@ function App() {
     async function fetchPhoto() {
       try {
         setIsLoading(true);
+        
         setIsError(false);
         const data = await getImages(searchQuery, page);
         setImages((prevState) => [...prevState, ...data]);
