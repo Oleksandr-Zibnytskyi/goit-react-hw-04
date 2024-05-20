@@ -1,0 +1,14 @@
+.btnLoad {
+display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+color: aliceblue;
+background-color: rgb(19, 155, 213);
+border-radius: 25px;
+border: none;
+}
+
+.btnLoad:hover {
+    background-color: rgba(52, 199, 207, 0.916);
+}
