@@ -60,24 +60,23 @@ function App() {
   };
 
   return (
-    <div>
-      <SearchBar onSearch={handleSearch} />
-      {isError ? (
-        <ErrorMessage />
-      ) : (
-        <ImageGallery items={images} openModal={openModal} />
-      )}
-      {isLoading && <Loader />}
-      <ImageModal
-        isModalOpen={isOpen}
-        closeModal={closeModal}
-        imageInfo={imageInfo}
-      />
-      {images.length > 0 && !isLoading && (
-        <LoadMoreBtn onLoadMore={handleLoadMore} />
-      )}
-      <Toaster />
-    </div>
+<div>
+  <SearchBar onSearch={handleSearch} />
+  {isError && <ErrorMessage />}
+  {isLoading && <Loader />}
+  {images.length > 0 && (
+    <ImageGallery items={images} openModal={openModal} />
+  )}
+  <ImageModal
+    isModalOpen={isOpen}
+    closeModal={closeModal}
+    imageInfo={imageInfo}
+  />
+  {images.length > 0 && !isLoading && (
+    <LoadMoreBtn onLoadMore={handleLoadMore} />
+  )}
+  <Toaster />
+</div>
   );
 }
 

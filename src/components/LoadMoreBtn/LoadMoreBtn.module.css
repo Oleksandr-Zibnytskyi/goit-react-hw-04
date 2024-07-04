@@ -1,8 +1,9 @@
 .btnLoad {
-display: flex;
+display: block;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 20px;
+margin-bottom: 25px;
+margin-top: 25px;
 color: aliceblue;
 background-color: rgb(19, 155, 213);
 border-radius: 25px;
